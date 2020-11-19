@@ -93,7 +93,11 @@ def draw?(board)
 end
 
 def over?(board)
+<<<<<<< HEAD
   won?(board) || draw?(board)
+=======
+  full?(board) || won?(board) || draw?(board)
+>>>>>>> 5b0bc28dfd17fa89224d7e655246787e35f21696
 end
 
 def winner(board)
@@ -105,6 +109,7 @@ end
 end
 
 def play(board)
+<<<<<<< HEAD
   until over?(board)
     turn(board)
   end
@@ -113,4 +118,12 @@ def play(board)
   elsif draw?(board)
     puts "Cat's Game!"
   end
+=======
+  turn(board)
+  until over?(board)
+    turn(board)
+    break
+end
+#  until over?(board)
+>>>>>>> 5b0bc28dfd17fa89224d7e655246787e35f21696
 end
